@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+    
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px; background-color: rgb(208, 250, 244);">
+    
+    <h1 style="color: blueviolet;">About Us</h1>
+
+    <h2>Welcome to Online Quiz</h2>
+
+    <p>At Online Quiz, we provide a simple platform for students to practice questions. Teachers can easily add courses and exams to the system, along with questions for each course.</p>
+
+    <h2>What We Offer</h2>
+
+    <ul>
+        <li><strong>Practice Questions:</strong> Students can sharpen their skills by practicing questions across various topics.</li>
+        <li><strong>Teacher Integration:</strong> Teachers can seamlessly add courses, exams, and questions to tailor the learning experience.</li>
+        <li><strong>User-Friendly Platform:</strong> Our app is designed for easy navigation, making learning and teaching straightforward.</li>
+    </ul>
+
+    <p>Thank you for choosing Online Quiz to enhance your learning and teaching experience!</p>
+    <hr class="my-4">
+    <p>Explore our Website.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>

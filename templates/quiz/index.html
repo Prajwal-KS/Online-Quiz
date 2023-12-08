@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+
+  .button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 0px 10px 0px 5px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+</style>
+<body style="background-color: blanchedalmond;">
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" style="background-color: blanchedalmond;">
+  <div class="container text-center">
+    <h1 class="display-1 text-info" style="font-family: sans-serif;">Let's Quiz</h1>
+    <p class="display-4 d-none d-sm-block" style="font-weight: bold;">Test your skills and become a master.</p>
+    <p class="lead">We're not just about questions and answers; we're curating experiences that are both entertaining and enlightening. Whether you're a trivia buff or a curious learner, there's something here for you.
+      Sign up now to unlock access to millions of quizzes tailored to your interests. The journey to knowledge awaits—let the quest begin!
+    </p>
+    <p><strong> Start Your Journey Here:</strong></p>
+    <a href="/student/studentsignup" class="button-24" role="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
